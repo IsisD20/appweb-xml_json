@@ -1,0 +1,21 @@
+----------CREACION DE TABLA USUARIOS------
+
+CREATE TABLE `usuarios` (
+  `Usuario` varchar(20) NOT NULL,
+  `Clave` int(20) NOT NULL,
+);
+
+INSERT INTO `usuarios` (`Usuario`, `Clave`) VALUES
+('Isis', 1234),
+('Erick', 12345678);
+
+----------CREACION DE TABLA TAREAS-----
+
+CREATE TABLE task(
+  id INT(11) PRIMARY KEY AUTO_INCREMENT,
+  title VARCHAR(255) NOT NULL,
+  description TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+DESCRIBE task;
